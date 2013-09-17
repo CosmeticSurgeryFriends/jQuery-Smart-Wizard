@@ -21,9 +21,9 @@ function SmartWizard(target, options) {
     this.elmStepContainer = $('<div></div>').addClass("stepContainer");
     this.loader = $('<div>Loading</div>').addClass("loader");
     this.buttons = {
-        next : $('<a>'+options.labelNext+'</a>').attr("href","#").addClass("buttonNext"),
-        previous : $('<a>'+options.labelPrevious+'</a>').attr("href","#").addClass("buttonPrevious"),
-        finish  : $('<a>'+options.labelFinish+'</a>').attr("href","#").addClass("buttonFinish")
+        next : $('<a>'+options.labelNext+'</a>').attr("href","#").addClass("wzdButton buttonNext"),
+        previous : $('<a>'+options.labelPrevious+'</a>').attr("href","#").addClass("wzdButton buttonPrevious"),
+        finish  : $('<a>'+options.labelFinish+'</a>').attr("href","#").addClass("wzdButton buttonFinish")
     };
 
     /*
@@ -345,8 +345,6 @@ function SmartWizard(target, options) {
             btn_element.click(function() {
                 if($.isFunction(btn.f)) {
                     btn.f.call();
-                }else {
-                    return false;
                 }
                 return false;
             });

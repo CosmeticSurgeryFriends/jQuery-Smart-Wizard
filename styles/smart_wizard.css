@@ -182,48 +182,10 @@
   color:#000 !important;       
 }
 
-.swMain .buttonNext {
+.swMain .wzdButton {
   display:block;
   float:right;
   margin:5px 3px 0 3px;
-  padding:5px;
-  text-decoration: none;
-  text-align: center;
-  font: bold 13px Verdana, Arial, Helvetica, sans-serif;
-  width:100px;
-  color:#FFF;
-  outline-style:none;
-  background-color:   #5A5655;
-  border: 1px solid #5A5655;
-  -moz-border-radius  : 5px; 
-  -webkit-border-radius: 5px;    
-}
-.swMain .buttonDisabled {
-  color:#F8F8F8  !important;
-  background-color: #CCCCCC !important;
-  border: 1px solid #CCCCCC  !important;
-  cursor:text;    
-}
-.swMain .buttonPrevious {
-  display:block;
-  float:right;
-  margin:5px 3px 0 3px;
-  padding:5px;
-  text-decoration: none;
-  text-align: center;
-  font: bold 13px Verdana, Arial, Helvetica, sans-serif;
-  width:100px;
-  color:#FFF;
-  outline-style:none;
-  background-color:   #5A5655;
-  border: 1px solid #5A5655;
-  -moz-border-radius  : 5px; 
-  -webkit-border-radius: 5px;    
-}
-.swMain .buttonFinish {
-  display:block;
-  float:right;
-  margin:5px 10px 0 3px;
   padding:5px;
   text-decoration: none;
   text-align: center;
@@ -237,21 +199,15 @@
   -webkit-border-radius: 5px;    
 }
 
-.swMain .releaseButton {
-  display:block;
-  float:right;
-  margin:5px 10px 0 3px;
-  padding:5px;
-  text-decoration: none;
-  text-align: center;
-  font: bold 13px Verdana, Arial, Helvetica, sans-serif;
-  width:100px;
-  color:#FFF;
-  outline-style:none;
-  background-color:   #5A5655;
-  border: 1px solid #5A5655;
-  -moz-border-radius  : 5px;
-  -webkit-border-radius: 5px;
+/* Use classes below to set style for exact button */
+.swMain .wzdButton .buttonFinish {}
+.swMain .wzdButton .buttonNext {}
+.swMain .wzdButton .buttonPrevious {}
+.swMain .wzdButton .buttonDisabled {
+  color:#F8F8F8  !important;
+  background-color: #CCCCCC !important;
+  border: 1px solid #CCCCCC  !important;
+  cursor:text;    
 }
 
 /* Form Styles */
